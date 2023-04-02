@@ -1,0 +1,10 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int a,b; cin>>a>>b;
+    int max = a;
+    if(max<b){
+        max=b;
+    }
+    cout<<max;
+}
