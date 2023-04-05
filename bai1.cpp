@@ -24,6 +24,6 @@ int main()
         }
     }
     // cout <<  << endl;
-    // cout << res << endl;
-    cout << max << endl;
+    cout <<"Number: "<< res <<" appear: " << max << endl;
+    
 }

@@ -18,20 +18,34 @@ using namespace std;
 //     }
 //     return 0;
 // }
-int main() {
-    string s;
-    getline(cin,s);
-    int index = 1;
-    for (int i = 0; i < s.length(); i++) {
-        if (s[i] == 'a') {
-            index = i - 2;
-            break;
-        }
+// int main() {
+//     string s;
+//     getline(cin,s);
+//     int index = 1;
+//     for (int i = 0; i < s.length(); i++) {
+//         if (s[i] == 'a') {
+//             index = i - 2;
+//             break;
+//         }
+//     }
+//     if (index != 1){
+//         cout << "Vi tri dau tien cua ki tu a trong chuoi la: " << index << endl;
+//     }else {
+//         cout << "Khong tim thay ki tu 'a' trong chuoi" << endl;
+//     }
+//     return 0;
+// }
+int firstLetter(string s){
+    for(int i = 0; i<=s.length();i++){
+        if(s[i]=='a'){ return i;}
     }
-    if (index != 1){
-        cout << "Vi tri dau tien cua ki tu a trong chuoi la: " << index << endl;
-    }else {
-        cout << "Khong tim thay ki tu 'a' trong chuoi" << endl;
+    cout <<"Not exists charactar 'a'"<<endl;
+ }
+
+ int main(){
+    string s; getline(cin,s);
+    int index = firstLetter(s);
+    if(index>=0){
+        cout << index << endl;
     }
-    return 0;
-}
+ }

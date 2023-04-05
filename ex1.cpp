@@ -214,7 +214,6 @@ bool exportFile(LinkedList &list)
     int tableCell = 20;
     int countCol = 5;
     string birtday = "";
-
     fstream fo;
     //Mo file de ghi, truong hop khong co file se tao moi file
     fo.open("StudentList.txt", ios::out);
@@ -305,6 +304,7 @@ void logic(LinkedList &list)
     Student s3{3, "Man Man3", 1, 8, 6};
     Student s4{4, "Man Man4", 4, 4, 10};
     Student s5{5, "Man Man5", 7, 5, 9};
+
     addTail(list, createNode(s1));
     addTail(list, createNode(s2));
     addTail(list, createNode(s3));
