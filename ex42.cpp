@@ -19,6 +19,7 @@ int main() {
         cout << "Enter value you need insert: ";
         cin >> newValue;
         cc.push_back(newValue);
+        cc.insert(cc.begin(), newValue);
         cout << "Result: ";
         for (int i = 0; i < cc.size(); i++) {
             cout << cc[i] << " ";
